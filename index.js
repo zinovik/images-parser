@@ -17,15 +17,14 @@ const TRANSFORM_LINK = "c_scale,h_0.25,w_0.25/";
 
   for (const match of matches) {
     images.push({
-      path: "zalessie",
+      path: "elagma",
       url: `${CLOUDINARY_LINK}${match[1]}`,
       urlThumbnail: `${CLOUDINARY_LINK}${TRANSFORM_LINK}${match[1]}`,
       description: match[2],
       text: "",
-      order: 0,
     });
   }
 
-  console.log(images);
+  console.log(JSON.stringify(images));
   console.log(images.length);
 })();
